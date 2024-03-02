@@ -1,66 +1,125 @@
-*{
+* {
     margin: 0;
     border: 0;
+    scroll-behavior: smooth;
 }
 
 /* nav bar top */
-.navtop{
-    height: 3rem;
-    width: 95rem;
+body {
+    overflow: hidden;
+    font-size: 1vw;
+}
+
+.navtop {
+    height: 7vh;
+    width: 100vw;
     clear: both;
     background-color: #007bff;
-    display:flex;
+    display: flex;
     align-items: center;
-    padding-left: 0.4rem;
-}
-.navtop img{
-    height:2rem ;
+    padding-left: 0.4vw;
 }
 
+.navtop img {
+    height: 2vw;
+}
 
+.navleft {
+    background-color: black;
+    height: 93vh;
+    width: 3vw;
+    position: absolute;
+}
 
+.contact-container {
+    /* background-color: red; */
+    height: 95vh;
+    width: 36vw;
+    position: absolute;
+    top: 7vh;
+    left: 3vw;
+
+}
+
+.contact{
+    display: flex;
+    border: 0.1vw solid black;
+    height: 13vh;
+    width: 35vw;
+    align-items: center;
+}
+.contact img{
+    height: 10vh;
+    width: 10vh;
+    border: 0.1vw solid black;
+    border-radius: 100px;
+}
 
 
 
 
 
 #chat-container {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-end;
     height: 90vh;
-    max-width:50vw ;
-    margin: 50px auto;
-    border: 1px solid #ccc;
-    padding: 10px;
+    width: 60vw;
+    border: 0.1vw solid #ccc;
+    padding: 1.4vh 0.5vw;
     border-radius: 5px;
+    border-bottom: 1px solid #ccc;
+    overflow-y: auto;
+    top: 7vh;
+    right: 0vw;
+
 }
 
 #chat-messages {
-    height: 90vh;
-    overflow-y: auto;
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 10px;
+    /* height: 90vh; */
+    margin-bottom: 1vw;
 }
-.left{
+
+.left {
     float: left;
     clear: both;
+    border: 0.1vw solid black;
+    border-radius: 2vw;
+    /* min-width: 2px; */
+    padding: 0.3vw 2.6vw;
 }
-.right{
+
+.right {
     float: right;
     clear: both;
+    border: 0.1vw solid black;
+    border-radius: 2vw;
+    /* min-width: 2px; */
+    padding: 0.3vw 2.6vw;
+}
+
+.input {
+    display: flex;
+    justify-content: space-around;
 }
 
 #message-input {
-    width: calc(100% - 70px);
-    padding: 5px;
-    border-radius: 3px;
-    border: 1px solid #ccc;
+    width: 37vw;
+    padding: 0.5vw;
+    border-radius: 0.3vw;
+    border: 0.1vw solid #ccc;
+    font-size: 1vw;
+    
 }
 
 #send-button {
-    width: 60px;
-    padding: 5px;
+    font-size: 1vw;
+    width: 6vw;
+    padding: 0.5vw;
     border: none;
     background-color: #007bff;
     color: #fff;
-    border-radius: 3px;
+    border-radius: 0.3vw;
     cursor: pointer;
 }
