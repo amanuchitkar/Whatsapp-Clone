@@ -11,10 +11,12 @@ body {
 }
 
 .navtop {
-    height: 7vh;
+    height: 6.9vh;
     width: 100vw;
+    top:6.9vh;
     clear: both;
-    background-color: #007bff;
+    background-color: #1c1c1c;
+    border-bottom:0.1vw solid#cccccc5b;
     display: flex;
     align-items: center;
     padding-left: 0.4vw;
@@ -25,37 +27,52 @@ body {
 }
 
 .navleft {
-    background-color: black;
+    background-color: #1c1c1c;
     height: 93vh;
     width: 3vw;
     position: absolute;
+    border-right:0.1vw solid#cccccc5b;
 }
-.subnav{
+
+.subnav1 {
     /* position: absolute; */
-    width: 100%;
-    background-color: #007bff;
+    width: 35.8vw;
+    background-color: #2d2d2d;
+    height: 10vh;
+    /* border-left:0.1vw solid#cccccc5b; */
+    border-right:0.1vw solid#cccccc5b;
 }
+
 .contact-container {
-    /* background-color: red; */
+    background-color: #0b141a;
     height: 95vh;
     width: 36vw;
     position: absolute;
     top: 7vh;
     left: 3vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
 }
 
-.contact{
+.contact {
     display: flex;
-    border: 0.1vw solid black;
-    height: 13vh;
+    border-bottom: 0.1vw solid rgba(255, 255, 255, 0.262);
+    height: 9vh;
     width: 35vw;
     align-items: center;
+    margin: 0.1vw;
+    border-radius: 0.2vw;
 }
-.contact img{
-    height: 10vh;
-    width: 10vh;
-    border: 0.1vw solid black;
+.contact:hover{
+
+}
+
+.contact img {
+    height: fit-content;
+    width: 2.5vw;
+    /* border: 0.1vw solid black; */
     border-radius: 100px;
 }
 
@@ -63,20 +80,32 @@ body {
 
 
 
-#chat-container {
-    display: flex;
+.subnav2 {
+    /* position: absolute; */
+    width: 61vw;
+    background-color: #2d2d2d;
+    height: 10vh;
+}
+
+.main-container {
     position: absolute;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 90vh;
-    width: 60vw;
-    border: 0.1vw solid #ccc;
-    padding: 1.4vh 0.5vw;
-    border-radius: 5px;
+    /* border-radius: 5px; */
     border-bottom: 1px solid #ccc;
     overflow-y: auto;
     top: 7vh;
     right: 0vw;
+}
+
+#chat-container {
+    border: 0.1vw solid #ccc;
+    display: flex;
+    padding: 1.4vh 0.5vw;
+
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 90vh;
+    width: 60vw;
+
 
 }
 
@@ -114,7 +143,7 @@ body {
     border-radius: 0.3vw;
     border: 0.1vw solid #ccc;
     font-size: 1vw;
-    
+
 }
 
 #send-button {
