@@ -107,21 +107,27 @@ body {
     justify-content: flex-end;
     height: 80vh;
     width: 60vw;
+    background-color: #0b141a;
+    z-index: 10;
 
 
 }
-#chat-container::before{
+/* .contact::before{
     content: "";
     display: block;
-    width: 100%;
-    height: 100%;
-    background-image: url('./bg.png');
-    background-size: cover; /* Adjust as needed */
-    background-position: center; /* Adjust as needed */
-    z-index: 2;
-    /* position: absolute;
-    top: 0;
-    left: 0; */
+    width: 700px;
+    height: 800px;
+    background-image: url("./bg.png");
+} */
+.imgs::after
+{
+    content: "";
+    display: block;
+    width: 60vw;
+    height: 80vh;
+    background: url("./bg.png") center ;
+    /* position: absolute; */
+    z-index: 1;
 }
 #chat-messages {
     /* height: 90vh; */
