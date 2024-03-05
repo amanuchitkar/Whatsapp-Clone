@@ -114,6 +114,7 @@ body {
     opacity: 2;
     background-image: url("./bg.png");
     background-position: center;
+    overflow-y: auto;
     /* background-repeat: no-repeat; */
 }
 /* .contact::before{
