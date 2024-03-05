@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         if (messageText !== "") {
             const messageElement = document.createElement("div");
             messageElement.textContent = messageText;
-            messageElement.classList.add("message");
+            messageElement.classList.add("right","chat");
             chatMessages.appendChild(messageElement);
             messageInput.value = "";
             chatMessages.scrollTop = chatMessages.scrollHeight;
