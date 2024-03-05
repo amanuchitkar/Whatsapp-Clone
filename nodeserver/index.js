@@ -1,4 +1,7 @@
-const { Socket } = require('socket.io');
+// const socket  = require('socket.io');
+// const socket  = require('socket.io');
+
+// const { Socket } = require('engine.io');
 
 // Node Server
 const io = require('socket.io')(8000)
@@ -11,6 +14,6 @@ io.on('connection', () => {
 
     });
     Socket.on("send", message => {
-        Socket.broadcast.emit('received', { message: message, name: user[Socket.id] })
+        Socket.broadcast.emit('received', { message: message, name: users[Socket.id] })
     });
 });

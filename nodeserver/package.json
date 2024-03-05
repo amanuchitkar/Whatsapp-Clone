@@ -3,20 +3,30 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {
+    "accepts": "^1.3.8",
+    "base64id": "^2.0.0",
+    "cookie": "^0.4.2",
+    "cors": "^2.8.5",
+    "debug": "^4.3.4",
+    "engine.io": "^6.5.4",
+    "engine.io-parser": "^5.2.2",
+    "mime-db": "^1.52.0",
+    "mime-types": "^2.1.35",
+    "ms": "^2.1.2",
+    "negotiator": "^0.6.3",
+    "object-assign": "^4.1.1",
+    "socket.io": "^4.7.4",
+    "socket.io-adapter": "^2.5.4",
+    "socket.io-parser": "^4.2.4",
+    "undici-types": "^5.26.5",
+    "vary": "^1.1.2",
+    "ws": "^8.11.0"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amanuchitkar/Whatsapp-Clone.git"
-  },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/amanuchitkar/Whatsapp-Clone/issues"
-  },
-  "homepage": "https://github.com/amanuchitkar/Whatsapp-Clone#readme",
-  "dependencies": {
-    "socket.io": "^4.7.4"
-  }
+  "license": "ISC"
 }

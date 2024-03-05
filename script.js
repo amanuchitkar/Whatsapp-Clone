@@ -1,4 +1,7 @@
-const socket  = io("https://localhost:8000");
+import { io } from "https://cdn.socket.io/4.7.4/socket.io.esm.min.js";
+
+const socket = io();
+// const socket  = io("https://localhost:8000");
 const name=prompt("Enter Your Name to Join..");
 
 document.addEventListener("DOMContentLoaded", function() {
