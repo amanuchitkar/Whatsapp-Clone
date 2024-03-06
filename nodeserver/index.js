@@ -1,19 +1,16 @@
-// const socket  = require('socket.io');
-// const socket  = require('socket.io');
-
-// const { Socket } = require('engine.io');
-
 // Node Server
 const io = require('socket.io')(8000)
 const users = {};
 
-io.on('connection', () => {
-    Socket.on('new-user-joined', name => {
-        users[Socket.id] = name;
-        Socket.broadcast.emit('user-joined', name)
+io.on('connection', socket=> {
+    socket.on('new-user-joined', name => {
+        console.log("New user",name)
+        users[socket.id] = name;
+        socket.broadcast.emit('user-joined', name)
 
     });
-    Socket.on("send", message => {
-        Socket.broadcast.emit('received', { message: message, name: users[Socket.id] })
+    socket.on("send", message => {
+        socket.broadcast.emit('received', { message: message, name: users[Socket.id] })
     });
 });
+// io.listen(8000);
