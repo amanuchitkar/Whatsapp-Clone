@@ -10,7 +10,7 @@ io.on('connection', socket=> {
 
     });
     socket.on("send", message => {
-        socket.broadcast.emit('received', { message: message, name: users[Socket.id] })
+        socket.broadcast.emit('received', { message: message, name: users[socket.id] })
     });
 });
 // io.listen(8000);
