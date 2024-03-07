@@ -1,10 +1,11 @@
 // Node Server
 const io = require('socket.io')(8000)
-const users = {};
+const users = {}
 
-io.on('connection', socket=> {
-    socket.on('new-user-joined', name => {
-        console.log("New user",name)
+io.on('connection', socket => {
+    socket.on('newuserjoined', name => {
+
+        console.log("New user", name)
         users[socket.id] = name;
         socket.broadcast.emit('user-joined', name)
 
@@ -13,4 +14,3 @@ io.on('connection', socket=> {
         socket.broadcast.emit('received', { message: message, name: users[socket.id] })
     });
 });
-// io.listen(8000);
